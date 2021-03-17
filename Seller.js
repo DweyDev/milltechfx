@@ -37,7 +37,7 @@ class Seller {
         const alpha = inventory.startingQuantity
         const beta = inventory.quantity
         const inv_based_change = Math.log10(beta / alpha) * (-v);
-        const sentimentChange = inv_based_change + ((ec - 0.5)*v)
+        const sentimentChange = inv_based_change + ((ec - 0.5))
         return sentimentChange;
     }
     
